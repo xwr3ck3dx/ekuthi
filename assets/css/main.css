@@ -1,0 +1,262 @@
+html, body {
+  font-family: 'Mukta';
+  margin: 0;
+  font-size: 15px;
+}
+
+.main {
+  background: url("../img/banner.png");
+  background-attachment: fixed;
+}
+
+.main .main-container {
+  background-color: rgba(0, 89, 158, 0.87);
+  background-attachment: fixed;
+}
+
+.main .main-container .menu {
+  max-width: 1200px;
+  padding-top: 2em;
+  max-height: 80px;
+  margin: 0 auto;
+  height: 5em;
+}
+
+.main .main-container .menu .nav-left {
+  float: left;
+  left: 0;
+  width: 30%;
+  height: 5em;
+}
+
+.main .main-container .menu .nav-left .logo {
+  height: 100%;
+  width: auto;
+}
+
+.main .main-container .menu .nav-right {
+  width: 70%;
+  float: right;
+  height: 5em;
+}
+
+.main .main-container .menu .nav-right ul.menu-items {
+  list-style: none;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.main .main-container .menu .nav-right ul.menu-items li.menu-item {
+  color: #fefefe;
+  line-height: 5em;
+  display: inline-block;
+  margin-right: 2em;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-bottom: 2px solid transparent;
+}
+
+.main .main-container .menu .nav-right ul.menu-items li.menu-item:hover {
+  border-bottom: 2px solid #fefefe;
+  cursor: pointer;
+}
+
+.main .main-container .landing {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10em;
+}
+
+.main .main-container .landing .landing-left {
+  padding: 2em;
+  color: #fefefe;
+  text-shadow: 1px 0px 1px;
+  font-size: 1.2em;
+}
+
+.main .main-container .landing .form-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  background: #129490;
+  border-radius: 1em;
+}
+
+.main .main-container .landing .form-container .register-form .form-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: #fefefe;
+}
+
+.main .main-container .landing .form-container .register-form .form-group.name .form-control {
+  display: inline;
+}
+
+.main .main-container .landing .form-container .register-form .form-group.name #firstname {
+  width: 49%;
+}
+
+.main .main-container .landing .form-container .register-form .form-group.name #lastname {
+  width: 49%;
+  margin-left: 1%;
+}
+
+.main .main-container .landing .form-container .register-form .form-group {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.main .main-container .landing .form-container .register-form .form-group input[type=text], .main .main-container .landing .form-container .register-form .form-group input[type=email], .main .main-container .landing .form-container .register-form .form-group input[type=password] {
+  height: 3em;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+.main .main-container .landing .form-container .register-form button.btn.register {
+  width: 100%;
+  font-size: 1.4em;
+  height: 4em;
+  background-color: #06BCC1;
+  font-weight: 600;
+}
+
+.main .main-container .search {
+  background: rgba(6, 188, 193, 0.3);
+  max-height: 50%;
+  margin-top: 4em;
+}
+
+.main .main-container .search .searchbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5em 1em;
+}
+
+.main .main-container .search .searchbar .form-inline {
+  text-align: center;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.main .main-container .search .searchbar .form-inline input[type=search].form-control {
+  width: 60%;
+  height: 4em;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.main .main-container .search .searchbar .form-inline button {
+  border-color: #fefefe;
+  color: #fefefe;
+  height: 3em;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+.main .main-container .search .searchbar .form-inline button:hover {
+  background-color: #fefefe;
+  color: #00599e;
+}
+
+.main .main-container .text-banner {
+  background: url("../img/searchbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -400px;
+}
+
+.main .main-container .text-banner .banner-container {
+  background: rgba(245, 112, 0, 0.6);
+  padding: 4em 0em;
+}
+
+.main .main-container .text-banner .banner-container .text-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fefefe;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 1px 2px 2px #333;
+}
+
+.main .main-container .course-carousel {
+  margin-top: 2em;
+}
+
+.main .main-container .course-carousel .carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main .main-container .course-carousel .carousel-container .carousel-title {
+  color: #fefefe;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main .main-container .course-carousel .carousel-container .MultiCarousel .MultiCarousel-inner .item img {
+  padding: 0.5em;
+}
+
+.row {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background: #129490;
+  color: #fefefe;
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+  left: 0;
+}
+
+.MultiCarousel .rightLst {
+  right: 0;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

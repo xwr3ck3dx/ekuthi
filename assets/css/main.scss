@@ -1,0 +1,232 @@
+$colors: (
+    primary:#fefefe,
+    secondary: #333,
+    third: #f57000,
+    fourth: #00599e,
+    fifth: #06BCC1,
+    sixth:#129490
+);
+
+html,body{
+    font-family: 'Mukta';
+    margin:0;
+    font-size: 15px;
+}
+
+.main{
+    background: url('../img/banner.png');
+    background-attachment: fixed;
+    
+    
+    .main-container{
+        background-color: transparentize(map-get($map: $colors, $key: fourth),0.13);
+        background-attachment: fixed;
+        
+       
+
+        .menu{
+            max-width: 1200px;
+            padding-top:2em;
+            max-height: 80px;
+            margin: 0 auto;
+            height: 5em;
+            .nav-left{
+                float: left;
+                left: 0;
+                width:30%;
+                height: 5em;
+
+                .logo{
+                   height:100%;
+                   width:auto;                 
+                }
+            }
+            .nav-right{
+                width:70%;
+                float: right;
+                height:5em;
+                ul.menu-items{
+                    list-style: none;
+                    float: right;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    height:100%;
+                    li.menu-item{
+                        color:map-get($map: $colors, $key: primary);
+                        line-height: 5em;
+                        display: inline-block;
+                        margin-right:2em;
+                        // padding:1em;
+                        
+                        vertical-align: middle;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size:1.1em;
+                        border-bottom: 2px solid transparent;
+                    }
+                    li.menu-item:hover{
+                        border-bottom: 2px solid map-get($map: $colors, $key: primary);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .landing{
+            max-width: 1200px;
+            margin:0 auto;
+            margin-top:10em;
+            .landing-left{
+                padding:2em;
+                color: map-get($map: $colors, $key: primary);
+                text-shadow: 1px 0px 1px;
+                font-size:1.2em;
+            }
+            .form-container{
+                width:90%;
+                margin: 0 auto;
+                padding:2em;
+                background: transparentize(map-get($map: $colors, $key: sixth),0);
+                border-radius: 1em;
+                .register-form{
+                    .form-title{
+                        font-size: 2em;
+                        margin-bottom: 1em;
+                        font-weight: 500;
+                        color: transparentize(map-get($map:$colors,$key:primary),0);
+                    }
+                    // label{
+                    //     color: map-get($map: $colors, $key: primary)
+                    // }
+                    .form-group.name{
+
+                        .form-control{
+                            
+                            display: inline;
+                            // width:49%;
+                            
+                        }
+                        #firstname{
+                            width:49%;
+                        }
+                        #lastname{
+                            width:49%;
+                            margin-left:1%;
+                        }
+                    }
+                    .form-group{
+                        margin-top:2em;
+                        margin-bottom:2em;
+                        input[type=text],input[type=email],input[type=password]{
+                            height:3em;
+                            font-size: 1.2em;
+                            padding: 1em;
+                        }
+
+                    }
+                    button.btn.register{
+                        width:100%;
+                        font-size: 1.4em;
+                        height:4em;
+                        background-color: map-get($map: $colors, $key: fifth);
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+        .search{
+            background: transparentize(map-get($map: $colors, $key: fifth),0.7);
+            max-height:50%;
+            
+            margin-top:4em;
+            .searchbar{
+                max-width:1200px;
+                margin:0 auto;
+                padding: 5em 1em;
+
+                .form-inline{
+                    text-align: center;
+                    display: block;
+                    margin-bottom:0px;
+                    input[type=search].form-control{
+                        width:60%;
+                        height:4em;
+                        padding:1em;
+                        border-radius: 2em;
+                    }
+                    button{
+                        border-color: map-get($map: $colors, $key: primary);
+                        color: map-get($map: $colors, $key: primary);
+                        height:3em;
+                        font-size:1.2em;
+                        margin-left:1em;
+                    }
+                    button:hover{
+                        background-color: map-get($map: $colors, $key: primary);
+                        color:map-get($map: $colors, $key: fourth);
+                    }
+                }
+            }
+        }
+        .text-banner{
+            background:url('../img/searchbg.jpg');
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position-y: -400px;
+            .banner-container{
+                background:transparentize(map-get($map: $colors, $key: third),0.4);
+                padding: 4em 0em;
+                .text-content{
+                    max-width: 1200px;
+                    margin:0 auto;
+                    color: map-get($map: $colors, $key: primary);
+                    font-size:1.5em;
+                    text-align: center;
+                    font-weight:500;
+                    text-shadow: 1px 2px 2px map-get($map: $colors, $key: secondary);
+                }
+            }
+        }
+        .course-carousel{
+            margin-top:2em;
+            .carousel-container{
+                max-width: 1200px;
+                margin:0 auto;
+                .carousel-title{
+                    color: map-get($map: $colors, $key: primary);
+                    font-size:1.5em;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                .MultiCarousel{
+                    .MultiCarousel-inner{
+                        .item{
+                            img{
+                                padding: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.row{
+    width:100%;
+}
+
+.img-responsive{
+    width:100%;
+    height:auto;
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:map-get($map: $colors, $key: sixth); color:map-get($map: $colors, $key: primary);}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; display: none}
