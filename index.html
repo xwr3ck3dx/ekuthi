@@ -46,8 +46,8 @@
                                 Register To Enroll Today
                             </div>
                             <div class="form-group name">
-                                <input type="text" class="form-control" id="firstname" placeholder="Firstname">
-                                <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+                                <input type="text" class="form-control col-sm-6 col-xs-12" id="firstname" placeholder="Firstname">
+                                <input type="text" class="form-control col-sm-6 col-xs-12" id="lastname" placeholder="Lastname">
                             </div>
                             <div class="form-group">
                               <!-- <label for="Firstname">Email address</label> -->
@@ -67,12 +67,11 @@
                     </div>
                 </div>
             </div>
-
             <div class="search">
                 <div class="searchbar">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <form class="form-inline row">
+                        <input class="form-control col-md-9 col-sm-12" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success col-md-2 col-sm-2" type="submit">Search</button>
                       </form>
                 </div>
             </div>
@@ -83,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="course-carousel">
+            <div class="course-carousel" id="upcoming">
                 <div class="carousel-container">
                     <div class="carousel-title">
                         Upcoming Classes
@@ -136,6 +135,71 @@
                 </div>
                
             </div>
+            <div class="course-carousel" id="featured">
+                <div class="carousel-container">
+                    <div class="carousel-title">
+                        Featured Classes
+                    </div>
+                    <div class="row">
+                        <div class="MultiCarousel" data-items="1,3,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                            <div class="MultiCarousel-inner">
+                                <div class="item">
+                                    <div class="pad15">
+                                        <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
+                                        <p class="lead">Advanced Excel</p>
+                                        <p>Lorem, ipsum.</p>
+                                        <p>Rs. 10000</p>
+                                        <p>50% off</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="pad15">
+                                        <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
+                                        <p class="lead">Advanced Excel</p>
+                                        <p>Lorem, ipsum.</p>
+                                        <p>Rs. 10000</p>
+                                        <p>50% off</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="pad15">
+                                        <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
+                                        <p class="lead">Advanced Excel</p>
+                                        <p>Lorem, ipsum.</p>
+                                        <p>Rs. 10000</p>
+                                        <p>50% off</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button class="btn btn-primary leftLst"><</button>
+                            <button class="btn btn-primary rightLst">></button>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-12 text-center">
+                            <br/><br/><br/>
+                            <hr/>
+                            <p>Settings</p>
+                            <p>Change data items for xs,sm,md and lg display items respectively. Ex:data-items="1,3,5,6"</p>
+                            <p>Change data slide for slides per click Ex:data-slide="1"</p>
+                        </div>
+                    </div> -->
+                </div>
+               
+            </div>
+            <footer class="footer" id="footer">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-sm-9 text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas quod, officia voluptas dolorem asperiores accusamus molestiae neque debitis corporis illo dolor ipsum vero accusantium.
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-primary">Apply For Trainer</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
