@@ -128,7 +128,7 @@ html,body{
                     button.btn.register{
                         width:100%;
                         font-size: 1.4em;
-                        height:4em;
+                        height:3.5em;
                         background-color: map-get($map: $colors, $key: fifth);
                         font-weight: 600;
                     }
@@ -325,9 +325,85 @@ html,body{
                 
             }
         }
+
+        
+    }
+    
+}
+.course-page{
+    .search{
+        clear:both;
+        background: url("../img/searchbg.jpg")!important;
+        background-repeat: no-repeat;
+        background-size: cover!important;
+
+        background-position-y: -400px!important;
+        
+        .search-overlay{
+            background: transparentize(map-get($map: $colors, $key: fourth),0.4);
+        }
+
+    }
+    .courses-main{
+        .courses-container{
+            
+            .course-title{
+                margin-top:2em;
+                font-size:1.3em;
+                color:map-get($map: $colors, $key: primary);
+                padding-left: 1em;
+                text-transform: uppercase;
+                margin-bottom:1em;
+                font-weight:500
+
+            }
+            max-width:1200px;
+            margin: 0 auto;
+            .item{
+                float: left;
+                position:relative;
+                div{
+                    text-align: center; 
+                    padding:0.5em; 
+                    margin:10px; 
+                    color:map-get($map: $colors, $key: primary);
+                    background:transparentize(map-get($map: $colors, $key: sixth),0.6);
+                    box-shadow: 2px 5px 8px 1px transparentize(map-get($map: $colors, $key: secondary), 0.3);
+                    padding: 1em 1em;
+                    img{
+                        // padding: 0.5em 0;
+                        box-shadow: 0px 0px 2px 2px transparentize(map-get($colors, primary),0.8);
+                    }
+                    p.lead{
+                        margin-top:0.5em;
+                    }
+                }
+                .pad15.overlay{
+                    position:absolute;
+                    top:0;
+                    background: map-get($map: $colors, $key: secondary);
+                    z-index: 99;
+                    display:none;
+                    a{
+                        color:map-get($map: $colors, $key: third);
+                        font-weight: 500;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+            .item:hover{
+                .pad15.overlay{
+                    display:block;
+                    transition:5s ease all;
+                }
+            }
+        }
     }
 }
-
     
 
 .row{

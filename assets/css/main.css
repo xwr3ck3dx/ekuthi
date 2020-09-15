@@ -116,7 +116,7 @@ html, body {
 .main .main-container .landing .form-container .register-form button.btn.register {
   width: 100%;
   font-size: 1.4em;
-  height: 4em;
+  height: 3.5em;
   background-color: #06BCC1;
   font-weight: 600;
 }
@@ -324,6 +324,81 @@ html, body {
 
 .main .main-container .footer .footer-main .container .newsletter button:hover {
   background-color: #06BCC1;
+}
+
+.course-page .search {
+  clear: both;
+  background: url("../img/searchbg.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position-y: -400px !important;
+}
+
+.course-page .search .search-overlay {
+  background: rgba(0, 89, 158, 0.6);
+}
+
+.course-page .courses-main .courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-page .courses-main .courses-container .course-title {
+  margin-top: 2em;
+  font-size: 1.3em;
+  color: #fefefe;
+  padding-left: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.course-page .courses-main .courses-container .item {
+  float: left;
+  position: relative;
+}
+
+.course-page .courses-main .courses-container .item div {
+  text-align: center;
+  padding: 0.5em;
+  margin: 10px;
+  color: #fefefe;
+  background: rgba(18, 148, 144, 0.4);
+  -webkit-box-shadow: 2px 5px 8px 1px rgba(51, 51, 51, 0.7);
+          box-shadow: 2px 5px 8px 1px rgba(51, 51, 51, 0.7);
+  padding: 1em 1em;
+}
+
+.course-page .courses-main .courses-container .item div img {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(254, 254, 254, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(254, 254, 254, 0.2);
+}
+
+.course-page .courses-main .courses-container .item div p.lead {
+  margin-top: 0.5em;
+}
+
+.course-page .courses-main .courses-container .item .pad15.overlay {
+  position: absolute;
+  top: 0;
+  background: #333;
+  z-index: 99;
+  display: none;
+}
+
+.course-page .courses-main .courses-container .item .pad15.overlay a {
+  color: #f57000;
+  font-weight: 500;
+}
+
+.course-page .courses-main .courses-container .item .pad15.overlay a:hover {
+  text-decoration: none;
+}
+
+.course-page .courses-main .courses-container .item:hover .pad15.overlay {
+  display: block;
+  -webkit-transition: 5s ease all;
+  transition: 5s ease all;
 }
 
 .row {
