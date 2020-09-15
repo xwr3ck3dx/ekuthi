@@ -220,6 +220,29 @@ html, body {
   margin-top: 0.5em;
 }
 
+.main .main-container .course-carousel .carousel-container .MultiCarousel .MultiCarousel-inner .item .pad15.overlay {
+  position: absolute;
+  top: 0;
+  background: #333;
+  z-index: 99;
+  display: none;
+}
+
+.main .main-container .course-carousel .carousel-container .MultiCarousel .MultiCarousel-inner .item .pad15.overlay a {
+  color: #f57000;
+  font-weight: 500;
+}
+
+.main .main-container .course-carousel .carousel-container .MultiCarousel .MultiCarousel-inner .item .pad15.overlay a:hover {
+  text-decoration: none;
+}
+
+.main .main-container .course-carousel .carousel-container .MultiCarousel .MultiCarousel-inner .item:hover .pad15.overlay {
+  display: block;
+  -webkit-transition: 5s ease all;
+  transition: 5s ease all;
+}
+
 .main .main-container .course-carousel .carousel-container .MultiCarousel .rightLst, .main .main-container .course-carousel .carousel-container .MultiCarousel .leftLst {
   background-color: #06BCC1;
 }

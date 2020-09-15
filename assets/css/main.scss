@@ -221,7 +221,29 @@ html,body{
                                 }
 
                             }
+                            .pad15.overlay{
+                                
+                                position:absolute;
+                                top:0;
+                                background: map-get($map: $colors, $key: secondary);
+                                z-index: 99;
+                                display:none;
+                                a{
+                                    color:map-get($map: $colors, $key: third);
+                                    font-weight: 500;
+                                }
+                                a:hover{
+                                    text-decoration: none;
+                                }
+
+                            }
                             
+                        }
+                        .item:hover{
+                            .pad15.overlay{
+                                display:block;
+                                transition:5s ease all;
+                            }
                         }
                         
                     }
