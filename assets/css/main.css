@@ -353,6 +353,10 @@ html, body {
   font-weight: 500;
 }
 
+.course-page .courses-main .courses-container div[class*=col-] {
+  padding: 0;
+}
+
 .course-page .courses-main .courses-container .item {
   float: left;
   position: relative;
@@ -397,8 +401,145 @@ html, body {
 
 .course-page .courses-main .courses-container .item:hover .pad15.overlay {
   display: block;
-  -webkit-transition: 5s ease all;
-  transition: 5s ease all;
+  -webkit-transition: .9s ease all;
+  transition: .9s ease all;
+}
+
+.course-details .course-main {
+  margin-top: 5em;
+}
+
+.course-details .course-main .course-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-details .course-main .course-container .course-title {
+  color: #fefefe;
+}
+
+.course-details .course-main .course-container .course-title .title-text {
+  margin: 1em 0em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.course-details .course-main .course-container .course-title .row {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: rgba(6, 188, 193, 0.2);
+}
+
+.course-details .course-main .course-container .course-title .row div[class*=col-] {
+  padding: 1em;
+}
+
+.course-details .course-main .course-container .course-title .row .text-content {
+  font-size: 1.2em;
+}
+
+.course-details .course-main .course-container .course-title .row .rating {
+  margin-top: 1em;
+}
+
+.course-details .course-main .course-container .course-title .row .rating .fa.fa-star {
+  color: #333;
+}
+
+.course-details .course-main .course-container .course-title .row .rating .fa.fa-star.checked {
+  color: #fefefe;
+}
+
+.course-details .course-main .course-container .course-content {
+  margin-top: 1em;
+  background: rgba(254, 254, 254, 0.06);
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card {
+  background: rgba(6, 188, 193, 0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-header {
+  background: none;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-header button {
+  color: #fefefe;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-header button:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-header button:focus {
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-header:hover {
+  cursor: pointer;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-body {
+  color: #fefefe;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-body ul {
+  list-style: none;
+  padding: 0em 1em;
+}
+
+.course-details .course-main .course-container .course-content .course-content-details .card .card-body ul li {
+  padding: 0.2em 0;
+  font-size: 1.1em;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fefefe;
+  text-align: center;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad .title {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad .btn.btn-link {
+  display: block;
+  margin: 0 auto;
+  background: rgba(6, 188, 193, 0.5);
+  margin: 0.5em auto;
+  color: #fefefe;
+  padding: 0.5em;
+  width: 10em;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad .btn.btn-link.secondary {
+  margin-top: 1em;
+  background: rgba(245, 112, 0, 0.8);
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad .btn.btn-link:hover {
+  text-decoration: none;
+}
+
+.course-details .course-main .course-container .course-content .course-content-ad .btn.btn-link:focus {
+  text-decoration: none;
 }
 
 .row {

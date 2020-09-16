@@ -359,6 +359,9 @@ html,body{
             }
             max-width:1200px;
             margin: 0 auto;
+            div[class*=col-]{
+                padding:0;
+            }
             .item{
                 float: left;
                 position:relative;
@@ -381,8 +384,10 @@ html,body{
                 .pad15.overlay{
                     position:absolute;
                     top:0;
+                    
                     background: map-get($map: $colors, $key: secondary);
                     z-index: 99;
+                    
                     display:none;
                     a{
                         color:map-get($map: $colors, $key: third);
@@ -395,16 +400,134 @@ html,body{
                 }
 
             }
+            
             .item:hover{
                 .pad15.overlay{
                     display:block;
-                    transition:5s ease all;
+                    transition:.9s ease all;
                 }
             }
         }
     }
 }
-    
+.course-details{
+    .course-main{
+        margin-top:5em;
+        .course-container{
+            max-width:1200px;
+            margin: 0 auto;
+            .course-title{
+                color: map-get($map: $colors, $key: primary);
+
+                .title-text{
+                    margin: 1em 0em;
+                    font-size:2em;
+                    font-weight: 500;
+                    // padding: 0 0.5em;
+                }
+                .row{
+                    // box-shadow: 2px 2px 3px 1px map-get($map: $colors, $key: secondary);
+                    margin: 0 auto;
+                    padding: 1em;
+                    background-color: transparentize(map-get($colors,fifth),0.8);
+                    div[class*=col-]{
+                        padding:1em;
+                    }
+                    .text-content{
+                        font-size:1.2em;
+                    }
+                    .rating{
+                        margin-top:1em;
+                        .fa.fa-star{
+                            color:map-get($map: $colors, $key: secondary);
+                        }
+                        .fa.fa-star.checked{
+                            color:map-get($map: $colors, $key: primary);
+                        }
+                    }
+                }
+            }
+            .course-content{
+                margin-top:1em;
+                background:transparentize(map-get($colors,primary), $amount: 0.94);
+                .course-content-details{
+                    .card{
+                        background:transparentize(map-get($colors,fifth), $amount: 1);
+                        box-shadow: none;
+                        border:none;
+                        .card-header{
+                            background:none;
+                            button{
+                                color: map-get($map: $colors, $key: primary);
+                                font-size: 1.2em;
+                                font-weight: 500;
+                            }
+                            button:hover{
+                                background-color: transparent;
+                                text-decoration: none;
+                            }
+                            button:focus{
+                                background-color: transparent;
+                                text-decoration: none;
+                                box-shadow: none;
+                                
+                            }
+                        }
+                        .card-header:hover{
+                            cursor: pointer;
+                        }
+                        .card-body{
+                            color:map-get($map: $colors, $key: primary);
+                            padding-top:0;
+                            padding-bottom:0;
+                            ul{
+                                list-style: none;
+                                padding:0em 1em;
+                                li{
+                                    padding:0.2em 0;
+                                    font-size:1.1em;
+                                }
+                            }
+                        }
+                    }
+                }
+                .course-content-ad{
+                    padding-top:1em;
+                    padding-bottom:1em;
+                    color: map-get($map: $colors, $key: primary);
+                    
+                    text-align:center;
+                    .title{
+                        font-size: 1.3em;
+                        font-weight:500;
+                        margin-bottom: 1em;
+                    }
+                    .btn.btn-link{
+                        display: block;
+                        margin:0 auto;
+                        background: transparentize(map-get($colors,fifth),0.5);
+                        margin:0.5em auto;
+                        color:map-get($map: $colors, $key: primary);
+                        padding:0.5em;
+                        width:10em;
+                    }
+                    .btn.btn-link.secondary{
+                        margin-top:1em;
+                        background: transparentize(map-get($colors,third),0.2);
+                        padding:0.5em 0;
+                        font-size:1.2em;
+                    }
+                    .btn.btn-link:hover{
+                        text-decoration: none;
+                    }
+                    .btn.btn-link:focus{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}    
 
 .row{
     width:100%;
