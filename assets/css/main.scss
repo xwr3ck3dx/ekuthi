@@ -49,14 +49,22 @@ html,body{
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
-                                font-size:1.4em;
+                                font-size:1.5em;
                                 font-weight:500;
                                 border-bottom:1px solid transparent;
                                 margin: 0 0.2em;
+                                color:map-get($map: $colors, $key: third);
                             }
+                            
                             .nav-link:hover{
                                 border-bottom:1px solid map-get($map: $colors, $key: primary);
                             }
+                        }
+                        .nav-item.active{
+                            .nav-link{
+                                border-bottom:1px solid map-get($map: $colors, $key: primary);
+                            }
+                            
                         }
                     }
                 }
@@ -502,7 +510,7 @@ html,body{
 }
 .course-details{
     .course-main{
-        margin-top:5em;
+        margin-top:2em;
         .course-container{
             max-width:1200px;
             margin: 0 auto;
@@ -625,7 +633,7 @@ html,body{
 
 .events{
     .events-main{
-        margin-top:5em;
+        margin-top:2em;
         .events-container{
             max-width:1200px;
             margin: 0 auto;
@@ -643,7 +651,8 @@ html,body{
                     // box-shadow: 2px 2px 3px 1px map-get($map: $colors, $key: secondary);
                     margin: 0 auto;
                     padding: 1em;
-                    background-color: transparentize(map-get($colors,gray),0.2);
+                    background-color: transparentize(map-get($colors,gray),0.4);
+                    box-shadow:2px 2px 3px 1px transparentize(map-get($colors,primary),0.8);
                     div[class*=col-]{
                         padding:1em;
                         position:relative;
