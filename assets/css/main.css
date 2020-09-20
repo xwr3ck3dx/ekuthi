@@ -958,4 +958,14 @@ ul.social-footer2 li a {
   -webkit-transition: all 250ms ease-in-out 0s;
   transition: all 250ms ease-in-out 0s;
 }
+
+@media screen and (max-width: 1200px) {
+  .main-container .course-carousel {
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+  .main-container .search .searchbar {
+    max-width: 90% !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

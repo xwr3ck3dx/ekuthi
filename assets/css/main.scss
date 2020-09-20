@@ -886,7 +886,21 @@ transition: all 250ms ease-in-out 0s;
 
 }
 
+// MEDIA QUERIES
 
+@media screen and (max-width: 1200px){
+    .main-container{
+        .course-carousel{
+            padding-left:2em;
+            padding-right:1em;
+        }
+        .search{
+            .searchbar{
+                max-width: 90%!important;
+            }
+        }
+    }
+}
 
 
 
