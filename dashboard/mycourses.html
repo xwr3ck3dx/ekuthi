@@ -1,19 +1,20 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Courses</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="shortcut icon" href="assets/img/Favicon No color@0.25x.png" type="image/x-icon">
+    <title>My Courses</title>
+    <link rel="shortcut icon" href="/assets/img/Favicon No color@0.25x.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     
 </head>
 <body>
-    <div class="main course-page" id="main">
+    
+    <div class="main dashboard">
         <div class="main-container">
             <div class="menu" id="menu">
                 <!-- <div class="navbar">
@@ -57,328 +58,113 @@
                           <a class="nav-link" href="/events.html">Events</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/login.html">Login</a>
+                          <a class="nav-link" href="/login.html">Logout</a>
                         </li>
                         
                       </ul>
                     </div>
                   </nav>
             </div>
-            <!-- <div class="landing row">
-                <div class="landing-left col-sm-6">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur corporis quis totam ipsa voluptatem facilis natus, sunt quidem fugit aliquam deserunt magnam! Non error consequatur maxime. Perferendis laborum, delectus cum aliquam et odit illo adipisci in nam eos possimus non nostrum excepturi iusto molestiae omnis vero, repellendus debitis? Velit cum accusamus atque, tenetur eligendi maiores. Architecto!
+            <div class="dashboard-container row">
+                <div class="menu-left col-md-3 col-sm-3">      
+                    <ul class="nav flex-column flex-nowrap overflow-hidden">
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate" href="#">
+                                <i class="fa fa-home"></i>
+                                <span class="d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1">
+                                <i class="fa fa-table"></i>
+                                <span class="d-none d-sm-inline">My Courses</span>
+                            </a>
+                            <div class="collapse" id="submenu1" aria-expanded="false">
+                                <ul class="flex-column pl-2 nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link py-0" href="#">
+                                            <span>Manage Courses</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-0" href="#">
+                                            <span>Calendar</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">
+                                <i class="fa fa-bar-chart"></i> 
+                                <span class="d-none d-sm-inline">My Events</span>
+                            </a>
+                            <div class="collapse" id="submenu2" aria-expanded="false">
+                                <ul class="flex-column pl-2 nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link py-0" href="#">
+                                            <span>Manage Events</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-0" href="#">
+                                            <span>Calendar</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate collapsed" href="#">
+                                <i class="fa fa-bar-chart"></i> 
+                                <span class="d-none d-sm-inline">My Assignments</span>
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Profile</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Settings</span></a></li>
+                    </ul>
                 </div>
-                <div class="landing-right col-sm-6">
-                    <div class="form-container">
-                        <form class="register-form">
-                            <div class="form-title">
-                                Register To Enroll Today
+                <div class="content-right col-md-9 col-sm-9">
+                    <div class="content-container">
+                        <div class="content-title">
+                            Manage Your Classes
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                              My Classes
                             </div>
-                            <div class="form-group name">
-                                <input type="text" class="form-control col-sm-6 col-xs-12" id="firstname" placeholder="Firstname">
-                                <input type="text" class="form-control col-sm-6 col-xs-12" id="lastname" placeholder="Lastname">
+                            <div class="card-body">
+                              <div class="class">
+                                  <div class="class-title">
+                                      Advanced Excel
+                                  </div>
+                                  <div class="class-time">
+                                      Sep 21, 2020 9:30 AM
+                                  </div>
+                                  <div class="class-options">
+                                      <a href="" class="btn btn-link">Join Class</a>
+                                  </div>
+                              </div>
+                              <div class="class">
+                                <div class="class-title">
+                                    Advanced Excel
+                                </div>
+                                <div class="class-time">
+                                    Sep 21, 2020 9:30 AM
+                                </div>
+                                <div class="class-options">
+                                    <a href="" class="btn btn-link">Join Class</a>
+                                </div>
                             </div>
-                            <div class="form-group">
-                              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
-                            <div class="form-group">
-                              <input type="password" class="form-control" id="Password" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-primary register">Register</button>
-                        </form>
+                        </div>
+                        
+                        
                     </div>
-                </div>
-            </div> -->
-            <div class="search">
-                <!-- <div class="searchbar">
-                    
-                    <form class="form-inline row">
-                        <input class="form-control col-md-9 col-sm-12" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success col-md-2 col-sm-2" type="submit">Search</button>
-                    </form>
-                </div> -->
-            
-                    
-                      <div class="searchbar">
-                        <input class="search_input" type="text" name="" placeholder="Search...">
-                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-                      </div>
-                    
-                
-            </div>
-            <div class="courses-main">
-                <div class="courses-container">
-                    <div class="course">
-                        <div class="course-title">
-                            Data-Science > Advanced Excel
-                        </div>
-                        <div class="row">
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course">
-                        <div class="course-title">
-                            All Courses
-                        </div>
-                        <div class="row">
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-2">
-                                <div class="pad15">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Advanced Excel</p>
-                                    <p>Lorem, ipsum.</p>
-                                    <p>Rs. 10000</p>
-                                    <p>50% off</p>
-                                </div>
-                                <div class="pad15 overlay">
-                                    <img src="assets/img/excel.png" class="img-responsive" alt="" srcset="">
-                                    <p class="lead">Next Class</p>
-                                    <p>9-19-2020</p>
-                                    <p>9:30 AM</p>
-                                    <p><a href="">Enroll Now</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>  
+    
             </div>
             <footer class="footer" id="footer">
                 <div class="footer-top">
@@ -491,6 +277,8 @@
                 </div>
             </footer>
         </div>
+       
     </div>
+    
 </body>
 </html>
