@@ -10,8 +10,11 @@ $colors: (
     gray:#F2F2F2
 );
 
+@import url('/assets/fonts/Mukta.ttf?family=Mukta');
+$font-main: 'Mukta';
+
 html,body{
-    font-family: 'Mukta'!important;
+    font-family: $font-main!important;
     margin:0;
     font-size: 15px;
 }
