@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("/assets/fonts/Mukta.ttf?family=Mukta");
+@import url("../fonts/Mukta.ttf?family=Mukta");
 html, body {
   font-family: "Mukta" !important;
   margin: 0;
