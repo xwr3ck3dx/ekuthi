@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meet</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src='https://jitsimeet.ekuthi.com:9996/external_api.js'></script>
+    <script src="assets/js/meet.js"></script>
+    <script>
+        $(function(){
+            $('#btnStart').on('click',function(){
+                StartMeeting();
+            });
+        });
+        
+    </script>
+    <style>
+        .container {
+            position: relative;;
+            /* width: 720px;
+            height:600px; */
+            border:1px red  solid;
+        }
+    </style>
+</head>
+<body>
+    <button id='btnStart'>Start</button>
+    <div class="container">
+        <div id='jitsi-meet-conf-container'></div>
+    </div>
+</body>
+</html>
