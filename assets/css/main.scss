@@ -502,14 +502,15 @@ html,body{
                 .pad15.overlay{
                     position:absolute;
                     top:0;
-                    
                     background: map-get($map: $colors, $key: secondary);
                     z-index: 99;
-                    
                     display:none;
                     a{
-                        color:map-get($map: $colors, $key: third);
+                        color:map-get($map: $colors, $key: secondary);
                         font-weight: 500;
+                        background:map-get($map: $colors, $key: third);
+                        border-radius:5%;
+                        padding:0.5em;
                     }
                     a:hover{
                         text-decoration: none;

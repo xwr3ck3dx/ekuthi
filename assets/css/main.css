@@ -428,8 +428,11 @@ html, body {
 }
 
 .course-page .courses-main .courses-container .item .pad15.overlay a {
-  color: #f57000;
+  color: #fefefe;
   font-weight: 500;
+  background: #f57000;
+  border-radius: 5%;
+  padding: 0.5em;
 }
 
 .course-page .courses-main .courses-container .item .pad15.overlay a:hover {
