@@ -1,7 +1,11 @@
 @charset "UTF-8";
-@import url("/assets/fonts/Mukta.ttf?family=Mukta");
+@font-face {
+  font-family: 'Mukta12';
+  src: url("/assets/frontend/assets/fonts/Mukta.ttf?family=Mukta12");
+}
+
 html, body {
-  font-family: "Mukta" !important;
+  font-family: "Mukta12" !important;
   margin: 0;
   font-size: 15px;
 }
