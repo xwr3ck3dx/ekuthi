@@ -37,6 +37,21 @@ html,body{
             // max-height: 80px;
             margin: 0 auto;
             position: relative;
+            .login-button{
+                color:map-get($map: $colors, $key: secondary);
+                background: map-get($map: $colors, $key: third);
+                padding:.3em 1em;
+                margin-left:1em;
+                font-size:1.2em;
+                border-radius: 5%;
+            }
+            .login-button:hover{
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 1px transparentize($color: map-get($colors,third), $amount: 0.7);
+            }
+            .login-button:focus{
+                border:transparent;
+            }
             .navbar{
                 min-height:5em;
                 background:transparent;

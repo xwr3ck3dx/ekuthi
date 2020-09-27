@@ -24,6 +24,25 @@ html, body {
   position: relative;
 }
 
+.main .main-container .menu .login-button {
+  color: #fefefe;
+  background: #f57000;
+  padding: .3em 1em;
+  margin-left: 1em;
+  font-size: 1.2em;
+  border-radius: 5%;
+}
+
+.main .main-container .menu .login-button:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(245, 112, 0, 0.3);
+          box-shadow: 1px 1px 4px 1px rgba(245, 112, 0, 0.3);
+}
+
+.main .main-container .menu .login-button:focus {
+  border: transparent;
+}
+
 .main .main-container .menu .navbar {
   min-height: 5em;
   background: transparent;
