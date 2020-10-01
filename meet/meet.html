@@ -2,8 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meet</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>eKuthi</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="shortcut icon" href="/assets/img/Favicon No color@0.25x.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src='https://jitsimeet.ekuthi.com:9996/external_api.js'></script>
     <script src="../assets/js/meet.js"></script>
     <script>
@@ -28,18 +35,143 @@
     </style>
 </head>
 <body>
-    Display Name: <input id='txtDispNme' type="text"> <br>
-        <button id='btnStart'>Start</button>
-        <input type="text" id="txtMeetingId">
-        <div class="container">
-            <div id="toolbox" class="toolbox" style="display:none;">
-                <button id='btnHangup'>Hangup</button>
-                <button id='btnCustomMic'>Mic</button>
-                <button id='btnCustomCamera'>Camera</button>
-                <button id='btnCustomTileView'>Toggle Tileview</button>
-                <button id='btnScreenShareCustom'>SS</button>
+    <div class="main dashboard">
+        <div class="main-container">
+            <div class="menu" id="menu">
+                
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="/assets/img/Final logo color@2x.png" class="logo" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-right " id="navbarNavDropdown">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/courses.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Course Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="/coursedetails.html">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/login.html">Logout</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </nav>
             </div>
-            <div id='jitsi-meet-conf-container'></div>
+            <div class="dashboard-container row">
+                <div class="menu-left col-md-3 col-sm-3">
+                        <ul class="nav flex-column flex-nowrap overflow-hidden">
+                            <li class="nav-item">
+                                <a class="nav-link text-truncate" href="#">
+                                    <i class="fa fa-home"></i>
+                                    <span class="d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1">
+                                    <i class="fa fa-table"></i>
+                                    <span class="d-none d-sm-inline">My Courses</span>
+                                </a>
+                                <div class="collapse" id="submenu1" aria-expanded="false">
+                                    <ul class="flex-column pl-2 nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">
+                                                <span>Manage Courses</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">
+                                                <span>Calendar</span>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Customers</span></a>
+                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                                <ul class="flex-column nav pl-4">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">
+                                                            <i class="fa fa-fw fa-clock-o"></i> Daily </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">
+                                                            <i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">
+                                                            <i class="fa fa-fw fa-bar-chart"></i> Charts </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">
+                                                            <i class="fa fa-fw fa-compass"></i> Areas </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-truncate collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">
+                                    <i class="fa fa-bar-chart"></i> 
+                                    <span class="d-none d-sm-inline">My Events</span>
+                                </a>
+                                <div class="collapse" id="submenu2" aria-expanded="false">
+                                    <ul class="flex-column pl-2 nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">
+                                                <span>Manage Events</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">
+                                                <span>Calendar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-truncate collapsed" href="#">
+                                    <i class="fa fa-bar-chart"></i> 
+                                    <span class="d-none d-sm-inline">My Assignments</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Profile</span></a></li>
+                            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Settings</span></a></li>
+                        </ul>
+                </div>
+                <div class="content-right col-md-9 col-sm-9">
+                    <div class="content-container">
+                        Display Name: <input id='txtDispNme' type="text"> <br>
+                        <button id='btnStart'>Start</button>
+                        <input type="text" id="txtMeetingId">
+                        <div class="container">
+                            <div id="toolbox" class="toolbox" style="display:none;">
+                                <button id='btnHangup'>Hangup</button>
+                                <button id='btnCustomMic'>Mic</button>
+                                <button id='btnCustomCamera'>Camera</button>
+                                <button id='btnCustomTileView'>Toggle Tileview</button>
+                                <button id='btnScreenShareCustom'>SS</button>
+                            </div>
+                            <div id='jitsi-meet-conf-container'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 </html>
