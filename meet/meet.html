@@ -5,11 +5,15 @@
     <title>meet</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src='https://jitsimeet.ekuthi.com:9996/external_api.js'></script>
-    <script src="assets/js/meet.js"></script>
+    <script src="../assets/js/meet.js"></script>
     <script>
         $(function(){
+            BindEvent();
+
             $('#btnStart').on('click',function(){
-                StartMeeting();
+                var meetingId = $('#txtMeetingId').val();
+                var dispNme = $('#txtDispNme').val();
+                StartMeeting(meetingId,dispNme);
             });
         });
         
@@ -24,9 +28,18 @@
     </style>
 </head>
 <body>
-    <button id='btnStart'>Start</button>
-    <div class="container">
-        <div id='jitsi-meet-conf-container'></div>
-    </div>
+    Display Name: <input id='txtDispNme' type="text"> <br>
+        <button id='btnStart'>Start</button>
+        <input type="text" id="txtMeetingId">
+        <div class="container">
+            <div id="toolbox" class="toolbox" style="display:none;">
+                <button id='btnHangup'>Hangup</button>
+                <button id='btnCustomMic'>Mic</button>
+                <button id='btnCustomCamera'>Camera</button>
+                <button id='btnCustomTileView'>Toggle Tileview</button>
+                <button id='btnScreenShareCustom'>SS</button>
+            </div>
+            <div id='jitsi-meet-conf-container'></div>
+        </div>
 </body>
 </html>
